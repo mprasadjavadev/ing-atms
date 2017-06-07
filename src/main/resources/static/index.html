@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="./assets/css/theme.css">
+    <link rel="stylesheet" href="./assets/css/stylesheet.css">
+    <link rel="stylesheet" href="./assets/css/fontello.css">
+    <!--popups-->
+    <link rel="stylesheet" href="./assets/css/ngExDialog.css">
+
+    <link id="#ng_load_plugins_before">
+
+</head>
+
+<body ng-app="ingAtmsApp" ng-controller="ingAtmsController">
+
+<section class="page-wrap">
+    <div ng-include src="'./views/tpl/header.html'"></div>
+    <div class="page-wrap" data-ui-view=""></div>
+
+    <!--http request loader-->
+    <div class="loading-spiner-holder spinner-blue" data-loading>
+        <div class="loading-spiner"><img src="./assets/images/loading.gif" alt="loading"/></div>
+    </div>
+</section>
+<div ng-include src="'./views/tpl/footer.html'"></div>
+
+<!--angular-->
+<script type="text/javascript" src="./assets/js/angular/angular.min.js"></script>
+<!--angular-cookies-->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular-cookies.js"></script>
+<!--router-->
+<script type="text/javascript" src="http://angular-ui.github.io/ui-router/release/angular-ui-router.js"></script>
+<!--lazyload-->
+<script type="text/javascript" src='./module/directives/ocLazyLoad.min.js'></script>
+<!--main app js-->
+<script type="text/javascript" src='./module/app.js'></script>
+<!--main controller-->
+<script type="text/javascript" src='./module/controllers/ingAtmsController.js'></script>
+<!--loader directive-->
+<script type="text/javascript" src="./module/directives/http.js"></script>
+<!--popups-->
+<script type="text/javascript" src="./module/directives/ngExDialog.js"></script>
+
+<script type="text/javascript" src='./module/factories/notificationFactory.js'></script>
+
+<script type="text/javascript" src='./module/controllers/loginController.js'></script>
+<script type="text/javascript" src='./module/services/loginService.js'></script>
+
+
+</body>
+</html>

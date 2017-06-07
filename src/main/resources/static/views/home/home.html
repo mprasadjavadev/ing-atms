@@ -1,0 +1,46 @@
+<div class="container">
+
+    <h2 class="page-title"><i class="demo-icon icon-dealers"></i> ING ATMs</h2>
+
+    <div class="filter-container" ng-show="search">
+        <p class="pull-left">Show ING ATMs for city: </p>
+        <input class="pull-left" ng-model="city"/>
+        <button ng-click="getCityATMsSize()" class="backbase_btn">Search</button>
+    </div>
+
+    <div class="table" ng-show="table">
+
+        <table>
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>Address</th>
+                <th>Geo Location</th>
+                <th>Postal Code</th>
+                <th>Distance</th>
+                <th>Type</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="atm in cityATMs" class="ng-scope">
+                <td>{{$index + 1}}</td>
+                <td>{{atm.address.city}}, {{atm.address.street}}, {{atm.address.housenumber}}</td>
+                <td>{{atm.address.geoLocation.lat}} - {{atm.address.geoLocation.lng}}</td>
+                <td>{{atm.address.postalcode}}</td>
+                <td>{{atm.distance}}</td>
+                <td>{{atm.type}}</td>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+        <div class="paging" ng-class="getCityATMsExcelClass();">
+            <a ng-class="getCityATMsPaginationBeforeCurrentClass();" ng-click="getCityATMsFirstPage();">First</a>
+            <a ng-class="getCityATMsPaginationBeforeCurrentClass();" ng-click="getCityATMsPreviousPage();">Previous</a>
+            {{cityATMsCurrentPage}}/{{cityATMsPages}}
+            <a ng-class="getCityATMsPaginationAfterCurrentClass();" ng-click="getCityATMsNextPage();">Next</a>
+            <a ng-class="getCityATMsPaginationAfterCurrentClass();" ng-click="getCityATMsLastPage();">Last</a>
+        </div>
+    </div>
+
+</div>

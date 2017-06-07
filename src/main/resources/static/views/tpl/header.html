@@ -1,0 +1,14 @@
+<header class="main-header clearfix">
+    <div class="container" ng-controller="headerController">
+        <a class="logo">
+            <figure>
+                <img src="./assets/images/backbase.png" alt="Backbase">
+            </figure>
+        </a>
+        <span ng-if="!$state.includes('login')" class="name"> Welcome {{logedInUserName}}  </span>
+        <div class="logout_container">
+            <a ng-if="!$state.includes('login')" class="logout" ng-click="logout()"> <span
+                    class="grey-circle activate-icon"></span> Logout </a>
+        </div>
+    </div>
+</header>

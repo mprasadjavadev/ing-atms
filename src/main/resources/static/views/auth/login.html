@@ -1,0 +1,18 @@
+<div class="login-area">
+    <h2>Login</h2>
+    <div class="login-content clearfix">
+        <form name="loginForm" class="loginForm" novalidate>
+            <label for="username">User name</label>
+            <input type="text" id="username" name="username" ng-model="userName" required=""/>
+            <div ng-show="loginForm.$submitted || loginForm.username.$touched">
+                <span class="error" ng-show="loginForm.username.$error.required">Enter user name.</span>
+            </div>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" ng-model="password" required=""/>
+            <div ng-show="loginForm.$submitted || loginForm.password.$touched">
+                <span class="error" ng-show="loginForm.password.$error.required">Enter password.</span>
+            </div>
+            <input type="submit" name="login" value="Login" ng-click="loginForm.$valid && login()">
+        </form>
+    </div>
+</div>

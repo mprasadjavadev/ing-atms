@@ -10,9 +10,7 @@ import org.springframework.web.client.RestTemplate;
 
 import java.io.IOException;
 
-/**
- * Created by Ahmad on 4/16/2017.
- */
+
 @Service
 public class ATMsWrapper {
 

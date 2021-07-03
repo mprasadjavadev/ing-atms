@@ -2,9 +2,7 @@ package com.backbase.assignment.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
-/**
- * Created by Ahmad on 6/4/2017.
- */
+
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Atm implements Comparable<Atm> {
 

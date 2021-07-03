@@ -9,9 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-/**
- * Created by Ahmad on 6/4/2017.
- */
+
 @Component
 public class AuthenticationFailerHandlerImpl implements AuthenticationFailureHandler {
 

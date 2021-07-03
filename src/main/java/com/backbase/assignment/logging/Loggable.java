@@ -4,9 +4,7 @@ import org.springframework.web.bind.annotation.Mapping;
 
 import java.lang.annotation.*;
 
-/**
- * Created by Ahmad on 6/4/2017.
- */
+
 @Target({ElementType.METHOD})
 @Retention(RetentionPolicy.RUNTIME)
 @Documented

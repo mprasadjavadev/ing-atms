@@ -8,9 +8,7 @@ import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.springframework.stereotype.Component;
 
-/**
- * Created by Ahmad on 6/4/2017.
- */
+
 @Aspect
 @Component
 public class LoggingInterceptor {

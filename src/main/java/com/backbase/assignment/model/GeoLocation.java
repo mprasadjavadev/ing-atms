@@ -1,8 +1,6 @@
 package com.backbase.assignment.model;
 
-/**
- * Created by Ahmad on 6/4/2017.
- */
+
 public class GeoLocation {
 
     private float lat;

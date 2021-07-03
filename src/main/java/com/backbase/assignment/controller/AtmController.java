@@ -11,9 +11,7 @@ import org.springframework.web.bind.annotation.*;
 import java.io.IOException;
 import java.util.List;
 
-/**
- * Created by Ahmad on 6/4/2017.
- */
+
 @Controller
 public class AtmController {
 

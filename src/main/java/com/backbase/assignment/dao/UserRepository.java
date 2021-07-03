@@ -10,9 +10,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
-/**
- * @author Ahmad Hamouda on 2/24/17.
- */
+
 @RepositoryRestResource(exported = false)
 public interface UserRepository extends PagingAndSortingRepository<User, Integer> {
 

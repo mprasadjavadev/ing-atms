@@ -10,9 +10,7 @@ import org.springframework.context.annotation.Configuration;
 import javax.sql.DataSource;
 import java.util.Properties;
 
-/**
- * Created by Ahmad on 6/4/2017.
- */
+
 @Configuration
 @ComponentScan
 class DataSourceConfig {

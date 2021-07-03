@@ -8,9 +8,7 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.io.Serializable;
 
-/**
- * Created by Ahmad on 6/4/2017.
- */
+
 @Entity
 @Table(name = "users")
 public class User implements Serializable, GrantedAuthority {

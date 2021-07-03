@@ -9,9 +9,7 @@ import org.apache.log4j.Logger;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
-/**
- * Created by Ahmad on 6/4/2017.
- */
+
 @ResponseStatus(value = HttpStatus.NOT_FOUND, reason = "No ATMs availble for this city.")
 public class NoAtmsAvilable extends RuntimeException {
 
